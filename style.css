@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(83, 210, 83);
+    overflow: hidden;
+}
+
+.gameContainer{
+    margin: auto;
+    height: 100vh;
+    width: 80vw;
+    background: url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blue{
+    height: 22vh;
+    width: 5vw;
+    position: relative;
+    background-image: url(/blue-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 840px;  
+}
+
+.blueCarMove{
+    animation: blueCarMove 1s linear infinite; 
+}
+
+#race{
+    height: 22vh;
+    width: 5vw;
+    position: relative;
+    background-image: url(/race-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 300px; 
+    top: 400px;
+}
+
+@keyframes blueCarMove {
+    0%{
+        top: -10vh;
+    }
+    100%{
+        top: 120vh;
+    }
+}
+
+#scoreBoard{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 40vw;
+    background-color: rgb(233, 210, 40);
+    border: 4px solid red;
+    border-radius: 20px;
+    display: none;
+}
+
+#score{
+    margin: auto;
+    margin-top: 50px;
+    color: black;
+    font-size: 50px;
+    border: 4px solid red;
+    background-color: rgb(87, 197, 164);
+    width: 30vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#btn{
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 15vw;
+    font-size: 30px;
+    background-color: rgb(87, 197, 164);
+    border: 4px solid red;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
+#btn:hover{
+    background-color: rgb(98, 141, 128);
+}
+
+#gameOver{
+    position: relative;
+    margin-left: 250px;
+    font-size: 150px;
+    color: yellow;
+    display: none;
+}
